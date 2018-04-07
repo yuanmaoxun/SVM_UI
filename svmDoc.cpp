@@ -38,7 +38,7 @@ BOOL CSvmDoc::OnNewDocument()
 	
 	if (!CDocument::OnNewDocument())
 		return FALSE;
-
+	CDocument::SetTitle("安全态势评估系统");
 	return TRUE;
 }
 

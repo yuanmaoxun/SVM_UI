@@ -157,7 +157,7 @@ int CSvmApp::ShowM(char *str)
 	char t2=10;
 
 	CSvmView* pView=((CSvmView*)(((CMainFrame*)(theApp.m_pMainWnd))->GetActiveView()));
-	CString SaveText ;
+	CString SaveText;
 	CString NewText;
 	pView->GetWindowText(SaveText);
 	SaveText=t2+SaveText;
