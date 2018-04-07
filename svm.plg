@@ -1,0 +1,109 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: svm - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/svm.res" /d "NDEBUG" "C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm.rc"" 
+Creating temporary file "C:\DOCUME~1\lili\LOCALS~1\Temp\RSP8.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/svm.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\ClassifyDlg.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\Compute_Param.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\Compute_Prompt.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\Compute_Result.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\GeneralPage.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\KerPage.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\LearnDlg.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\LearnPage.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\MainFrm.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\OptimizePage.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\PerformPage.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\PromptDlg.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_classify.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_common.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_learn.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_learn_main.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svmDoc.cpp"
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svmView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lili\LOCALS~1\Temp\RSP8.tmp" 
+Creating temporary file "C:\DOCUME~1\lili\LOCALS~1\Temp\RSP9.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/svm.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lili\LOCALS~1\Temp\RSP9.tmp" 
+Creating temporary file "C:\DOCUME~1\lili\LOCALS~1\Temp\RSPA.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/svm.pdb" /machine:I386 /out:"Release/svm.exe" 
+".\Release\ClassifyDlg.obj"
+".\Release\Compute_Param.obj"
+".\Release\Compute_Prompt.obj"
+".\Release\Compute_Result.obj"
+".\Release\GeneralPage.obj"
+".\Release\KerPage.obj"
+".\Release\LearnDlg.obj"
+".\Release\LearnPage.obj"
+".\Release\MainFrm.obj"
+".\Release\OptimizePage.obj"
+".\Release\PerformPage.obj"
+".\Release\PromptDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\svm.obj"
+".\Release\svm_classify.obj"
+".\Release\svm_common.obj"
+".\Release\svm_learn.obj"
+".\Release\svm_learn_main.obj"
+".\Release\svmDoc.obj"
+".\Release\svmView.obj"
+".\Release\svm.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lili\LOCALS~1\Temp\RSPA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ClassifyDlg.cpp
+Compute_Param.cpp
+Compute_Prompt.cpp
+Compute_Result.cpp
+GeneralPage.cpp
+KerPage.cpp
+LearnDlg.cpp
+LearnPage.cpp
+MainFrm.cpp
+OptimizePage.cpp
+PerformPage.cpp
+PromptDlg.cpp
+svm.cpp
+svm_classify.cpp
+svm_common.cpp
+C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_common.cpp(256) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_common.cpp(392) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+svm_learn.cpp
+C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_hideo.h(87) : warning C4101: 'j' : unreferenced local variable
+C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_hideo.h(205) : warning C4101: 'obj_after' : unreferenced local variable
+C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_hideo.h(205) : warning C4101: 'obj_before' : unreferenced local variable
+svm_learn_main.cpp
+C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_learn_main.cpp(93) : warning C4244: 'argument' : conversion from 'double' to 'long', possible loss of data
+svmDoc.cpp
+svmView.cpp
+Generating Code...
+C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_hideo.h(574) : warning C4700: local variable 'isnantest' used without having been initialized
+C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_common.cpp(277) : warning C4715: 'read_model' : not all control paths return a value
+C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_common.cpp(346) : warning C4715: 'read_documents' : not all control paths return a value
+C:\Documents and Settings\lili\桌面\1\图书馆管理系统\winsvm\svm_common.cpp(445) : warning C4715: 'nol_ll' : not all control paths return a value
+Linking...
+
+
+
+<h3>Results</h3>
+svm.exe - 0 error(s), 10 warning(s)
+</pre>
+</body>
+</html>

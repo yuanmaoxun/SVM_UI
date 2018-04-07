@@ -1,0 +1,5 @@
+path=D:\svmdata1
+num=15
+matrix=matrix.txt
+catalog=class.txt
+train=train

@@ -1,0 +1,657 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\svm.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  32, 32
+BEGIN
+    BUTTON      ID_FILE_LEARN
+    BUTTON      ID_FILE_CLASSIFY
+    SEPARATOR
+    BUTTON      ID_OPTION_PROMPT
+    BUTTON      ID_OPTION_LEARN
+    SEPARATOR
+    BUTTON      ID_CLEAR_TEXT
+    SEPARATOR
+    BUTTON      ID_STOP_RUNNING
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "svm Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "svm\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "svm.EXE\0"
+            VALUE "ProductName", "svm 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROMPT_DLG DIALOG DISCARDABLE  0, 0, 187, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Prompt Option Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,88,98,24,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,98,23,14
+    CONTROL         "Action",IDC_SHOW_ACTION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,23,36,10
+    CONTROL         "Test Result",IDC_SHOW_TESTRESULT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,74,53,10
+    CONTROL         "Title",IDC_SHOW_TITLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,54,30,10
+    CONTROL         "Compute_1",IDC_SHOW_COMPUTE_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,17,53,10
+    CONTROL         "write model",IDC_WRITE_MODEL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,84,54,10
+    CONTROL         "Train Result",IDC_SHOW_TRAINRESULT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,64,56,10
+    CONTROL         "Write File",IDC_SHOW_WRITEFILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,44,48,10
+    CONTROL         "Read File",IDC_SHOW_READFILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,34,47,10
+    CONTROL         "Compute_2",IDC_SHOW_COMPUTE_2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,30,53,10
+    CONTROL         "Compute_3",IDC_SHOW_COMPUTE_3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,43,53,10
+    GROUPBOX        "Computing ",IDC_STATIC,93,7,74,52
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROMPT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTION_LEARN         "Train Options..\n Train Option"
+    ID_FILE_LEARN           "Learn from training data...\nTrain model"
+    ID_FILE_CLASSIFY        "Classify testing data ...\nTest Model"
+    ID_OPTION_PROMPT        "Prompt message Options\nPrompt Option"
+    ID_TOOL_TEMP            "Batch Operation...\nbatch computation"
+    ID_STOP_RUNNING         "Stop the computation\n Stop Computation"
+    ID_CLEAR_TEXT           "Clear the windows...\n Clear Windows"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Help..( N/A )"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SVM-Chen"
+FONT 9, "??"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "SVM-Chen V2.0  2001/10/10",IDC_STATIC,54,20,90,8
+END
+
+IDD_LEARN_GENERAL DIALOG DISCARDABLE  20, 20, 191, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "General"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Verbosity level:",IDC_STATIC,18,14,52,8
+    EDITTEXT        IDC_EDIT_V,77,11,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "OutputFile",IDC_STATIC,15,35,149,61
+    LTEXT           "l",IDC_STATIC,32,56,8,8
+    EDITTEXT        IDC_EDIT_L,55,52,40,14,ES_AUTOHSCROLL
+    LTEXT           "a",IDC_STATIC,32,76,8,8
+    EDITTEXT        IDC_EDIT_A,55,74,40,14,ES_AUTOHSCROLL
+END
+
+IDD_LEARN_LEARNING DIALOG DISCARDABLE  0, 0, 189, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Learning"
+FONT 10, "System"
+BEGIN
+    LTEXT           "C:",IDC_STATIC,49,17,19,8
+    EDITTEXT        IDC_EDIT_C,102,13,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_J,102,32,40,14,ES_AUTOHSCROLL
+    CONTROL         "Use biased hyperplane",IDC_CHECK_B,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,28,64,92,10
+    CONTROL         "Remove inconsistent training examples",IDC_CHECK_I,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,77,145,10
+    LTEXT           "cost-factor",IDC_STATIC,40,35,35,8
+END
+
+IDD_LEARN_PERFORM DIALOG DISCARDABLE  0, 0, 189, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Perform"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_O,40,32,40,14,ES_AUTOHSCROLL
+    CONTROL         "Compute leave-one-out estimates",IDC_CHECK_X,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,29,16,125,10
+    LTEXT           "Rho",IDC_STATIC,83,35,24,8
+    LTEXT           "transduction fraction",IDC_STATIC,83,65,78,8
+    EDITTEXT        IDC_EDIT_P,40,62,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_K,40,47,40,14,ES_AUTOHSCROLL
+    LTEXT           "Search Depth",IDC_STATIC,83,50,80,8
+END
+
+IDD_LEARN_KERNEL DIALOG DISCARDABLE  0, 0, 189, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kernel"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_D,44,38,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Kernel Type:",IDC_STATIC,7,14,42,8
+    LTEXT           "d",IDC_STATIC,31,39,8,8
+    LTEXT           "s",IDC_STATIC,31,54,8,8
+    EDITTEXT        IDC_EDIT_S,44,52,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    COMBOBOX        IDC_COMBO_T,51,12,132,67,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "g",IDC_STATIC,107,37,8,8
+    LTEXT           "c",IDC_STATIC,107,53,8,8
+    LTEXT           "user define",IDC_STATIC,34,72,42,8
+    EDITTEXT        IDC_EDIT_G,118,37,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_C,118,53,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_U,78,70,40,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_LEARN_OPTIMIZE DIALOG DISCARDABLE  0, 0, 179, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Optimize"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_Q,18,14,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_N,18,28,40,14,ES_AUTOHSCROLL
+    LTEXT           "maximum size of subproblems ",IDC_STATIC,60,17,106,8
+    LTEXT           "number of new variables",IDC_STATIC,60,31,85,8
+    LTEXT           "cache size",IDC_STATIC,60,45,54,8
+    EDITTEXT        IDC_EDIT_M,18,42,40,14,ES_AUTOHSCROLL
+    LTEXT           "epson",IDC_STATIC,60,59,51,8
+    LTEXT           "iteration time",IDC_STATIC,60,73,79,8
+    EDITTEXT        IDC_EDIT_E,18,56,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_H,18,70,40,14,ES_AUTOHSCROLL
+    CONTROL         "Final Check",IDC_FINAL_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,89,54,10
+END
+
+IDD_LEARN_DLG DIALOG DISCARDABLE  0, 0, 187, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SVM Learning "
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,64,86,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,86,50,14
+    LTEXT           "Training Data File:",IDC_STATIC,7,7,61,8
+    LTEXT           "Model Result File:",IDC_STATIC,7,34,60,8
+    EDITTEXT        IDC_EDIT_TRAIN,31,17,90,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Brow",IDC_BROW_TRAIN,124,16,20,14
+    PUSHBUTTON      "Brow",IDC_BROW_MODEL,125,44,20,14
+    EDITTEXT        IDC_EDIT_MODEL,31,44,90,14,ES_AUTOHSCROLL
+    CONTROL         "Open model when finish",IDC_CHECK_OPEN_MODEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,67,94,10
+END
+
+IDD_CLASSIFY_DLG DIALOG DISCARDABLE  0, 0, 187, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SVM Classify"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,106,82,32,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,82,32,14
+    LTEXT           "Classify  Data:",IDC_STATIC,16,16,49,8
+    LTEXT           "Model  File:",IDC_STATIC,26,34,39,8
+    EDITTEXT        IDC_EDIT_CLASSIFY,67,15,90,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Brow",IDC_BROW_CLASSIFY,160,14,20,14
+    PUSHBUTTON      "Brow",IDC_BROW_MODEL,160,31,20,14
+    EDITTEXT        IDC_EDIT_MODEL,67,31,90,14,ES_AUTOHSCROLL
+    CONTROL         "Open result when finish",IDC_CHECK_OPEN_MODEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,68,93,10
+    LTEXT           "Result  File:",IDC_STATIC,24,52,40,8
+    PUSHBUTTON      "Brow",IDC_BROW_RESULT,160,48,20,14
+    EDITTEXT        IDC_EDIT_RESULT,67,47,90,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_LEARN_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_LEARN_LEARNING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_LEARN_PERFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_LEARN_KERNEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_LEARN_OPTIMIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_LEARN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_CLASSIFY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\HAMMER.ICO"
+IDR_SVMTYPE             ICON    DISCARDABLE     "res\\svmDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "Main(&M)"
+    BEGIN
+        MENUITEM "Learn(&L)...\tCtrl+L",        ID_FILE_LEARN
+        MENUITEM "Classify(&S)\tCtrl+S",        ID_FILE_CLASSIFY
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "ToolBar(&T)",                 ID_VIEW_TOOLBAR
+        MENUITEM "StatusBar(&S)",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "Options(&O)"
+    BEGIN
+        MENUITEM "Learn Option",                ID_OPTION_LEARN
+        MENUITEM "Prompt Options",              ID_OPTION_PROMPT
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "About svm(&A)...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LEARN_KERNEL DLGINIT
+BEGIN
+    IDC_COMBO_T, 0x403, 11, 0
+0x3a30, 0x6c20, 0x6e69, 0x6165, 0x2072, "\000" 
+    IDC_COMBO_T, 0x403, 27, 0
+0x3a31, 0x7020, 0x6c6f, 0x6e79, 0x6d6f, 0x6169, 0x206c, 0x7328, 0x7828, 
+0x792a, 0x2b29, 0x2963, 0x645e, "\000" 
+    IDC_COMBO_T, 0x403, 24, 0
+0x3a32, 0x7220, 0x6662, 0x6520, 0x7078, 0x2d28, 0x7c67, 0x787c, 0x742d, 
+0x7c7c, 0x325e, 0x0029, 
+    IDC_COMBO_T, 0x403, 26, 0
+0x3a33, 0x7320, 0x6769, 0x6f6d, 0x6469, 0x7420, 0x6e61, 0x2868, 0x2873, 
+0x2a78, 0x2979, 0x632b, 0x0029, 
+    IDC_COMBO_T, 0x403, 19, 0
+0x3a34, 0x7520, 0x6573, 0x2072, 0x6564, 0x6966, 0x656e, 0x2064, 0x2020, 
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "svm\n\nSvm\n\n\nSvm.Document\nSvm Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "svm"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+    ID_INDICATOR_TIME       "Time of Computation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\svm.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
